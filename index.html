@@ -1,1 +1,84 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="dates-holder">
+            <div class="start-date-holder">
+                <label for="start-date" class="date-title">Початкова дата</label>
+                <input class="input-date input-font" type="date" class="start-date" id="start-date">
+            </div>
+
+            <div class="end-date-holder">
+                <label for="end-date" class="date-title">Кінцева дата</label>
+                <input class="input-date input-font" type="date" class="end-date" id="end-date">
+            </div>
+        </div>
+        <div class="preset-holder">
+            <label for="preset" class="preset-label">Пресети</label>
+            <select name="" id="preset" class="selectors ">
+                <option value="none">-</option>
+                <option value="week">Тиждень</option>
+                <option value="month">Місяць</option>
+            </select>
+        </div>
+
+        <div class="selection-holder">
+
+            <select name="" id="days-to-count" class="input-font selectors">
+                <option value="all-days">Всі дні</option>
+                <option value="working-days">Будні дні</option>
+                <option value="weekends">Вихідні дні</option>
+            </select>
+
+            <select name="" id="time-period" class="input-font selectors">
+                <option value="days">Порахувати кількість днів</option>
+                <option value="hours">Порахувати кількість годин</option>
+                <option value="minutes">Порахувати кількість хвилин</option>
+                <option value="seconds">Порахувати кількість секунд</option>
+            </select>
+        </div>
+        <div class="result-holder">
+            <button id="calculate" class="calculate">CALCULATE</button>
+            <div class="result-div">
+                <label for="result" class="result-label">Результат</label>
+                <input type="text" class="input-font" readonly id="result">
+            </div>
+
+
+        </div>
+
+        <div class="last-results">
+            <div class="result-header">
+                <div class="start-h">Початкова дата</div>
+                <div class="end-h">Кінцева дата</div>
+                <div class="period-h">Опція</div>
+                <div class="result-h">Результат</div>
+            </div>
+
+            <div class="result-table">
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>
