@@ -5,13 +5,12 @@ import { presetListener } from './presets.js';
 import { daysToCount } from './daysToCount.js';
 import { periodCalc } from './time-period.js';
 import { createRow } from './button.js';
-// import { checkInputs } from './checkInputs.js';
+
 
 
 const resultInput = document.querySelector('#result');
 const button = document.querySelector('#calculate');
 const startDate = document.querySelector('#start-date');
-const endDate = document.querySelector('#end-date');
 
 const checkInputs = () => {
   if (startDate.value !== '') {
