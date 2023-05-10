@@ -175,7 +175,7 @@ label {
 .calculate {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -188,4 +188,10 @@ label {
 }
 .calculate:hover {
   background-color: #4d648d;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #ababab;
 }/*# sourceMappingURL=styles.css.map */
