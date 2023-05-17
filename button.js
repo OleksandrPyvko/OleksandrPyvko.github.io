@@ -23,6 +23,7 @@ window.addEventListener('load', () => {
 //Creating row
 const createRowElement = (data) => {
   const row = document.createElement('div');
+  
   row.innerHTML = `
      <div class="start-row">${data.st}</div>
     <div class="end-row">${data.en}</div>
@@ -35,6 +36,7 @@ const createRowElement = (data) => {
 
 const start = () => {
   const rows = document.querySelectorAll('.result-row');
+
   if (rows.length >= 10) {
     table.removeChild(rows[0]);
   }
