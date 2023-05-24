@@ -1,21 +1,24 @@
 'use strict';
 
-const periodSelector = document.querySelector('#time-period');
+export class TimePeriod {
+  constructor(periodSelector) {
+    this.periodSelector = periodSelector;
+  }
 
-
-
-export const periodCalc = (func) => {
-  if (periodSelector.value === 'days') {
+  calculateTime(func) {
+     if (this.periodSelector.value === 'days') {
     return func;
   }
-  if (periodSelector.value === 'hours') {
+  if (this.periodSelector.value === 'hours') {
     return func * 24;
   }
-  if (periodSelector.value === 'minutes') {
+  if (this.periodSelector.value === 'minutes') {
     return func * 24 * 60;
   }
-  if (periodSelector.value === 'seconds') {
+  if (this.periodSelector.value === 'seconds') {
     return func * 24 * 60 * 60;
   }
   localStorage.setItem('periodCalc', periodCalc(func));
 };
+  }
+
